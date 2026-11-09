@@ -30,7 +30,7 @@ Initial state.json example (replace placeholders with actual values):
 {
   "schema_version": 1,
   "feature_id": "F001",
-  "title": "Document acquisition",
+  "title": "User preferences",
   "stage": "discovery",
   "status": "in_progress",
   "mode": "economical",
@@ -56,6 +56,6 @@ Compare approved inputs before dependent work and on resume. A mismatch is unass
 
 ## Git, validation, and recovery
 
-Local commits within approved scope are permitted. Inspect working tree and stage only task-owned changes. Use logical messages such as `F001-T001: extract document text`. Check existing history before retrying commits. Do not invent author identity or bypass hooks. If Git is absent, initialize only during authorized implementation when permissions permit; otherwise report the blocker and retain work. Workflow evidence may be committed separately to avoid self-referential hashes.
+Local commits within approved scope are permitted. Inspect working tree and stage only task-owned changes. Use logical messages such as `F001-T001: save user preferences`. Check existing history before retrying commits. Do not invent author identity or bypass hooks. If Git is absent, initialize only during authorized implementation when permissions permit; otherwise report the blocker and retain work. Workflow evidence may be committed separately to avoid self-referential hashes.
 
 Resume compares state with actual files, fingerprints, working tree, commits, task evidence, unresolved findings, and review baseline. Do not repeat completed work solely because state lags. Reuse tests/review only when relevant code, inputs, and environment still match. Rerun affected checks after changes. Completion needs satisfied approved acceptance criteria, relevant passing validation, and explicit disposition of findings. Missing independent review requires disclosure and user acceptance before completion.

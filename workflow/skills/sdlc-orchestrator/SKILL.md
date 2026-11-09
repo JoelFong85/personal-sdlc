@@ -25,7 +25,7 @@ Economical is default. Handle lightweight discovery/refinement/planning in the m
 
 A specialist brief includes skill path, feature path, exact task/scope, approved revisions, allowed files, and expected result. Handoffs are concise: outcome, files, checks, unresolved issues, next action. Keep user questions/approvals in the main session. Do not claim delegation occurred if it did not.
 
-Thorough mode expands investigation/testing/review depth; critical safety and correctness checks apply in both modes. Reuse evidence while applicable. After two failed correction attempts at the same issue, stop automatic retries and present evidence and a revised approach. Warn before unusually expensive runs or corpus operations; do not invent dollar estimates. Record actual usage only when reliable data is exposed; these instructions enforce no monetary cap.
+Thorough mode expands investigation/testing/review depth; critical safety and correctness checks apply in both modes. Reuse evidence while applicable. After two failed correction attempts at the same issue, stop automatic retries and present evidence and a revised approach. Warn before unusually expensive runs or large data operations; do not invent dollar estimates. Record actual usage only when reliable data is exposed; these instructions enforce no monetary cap.
 
 ## Recovery and completion
 

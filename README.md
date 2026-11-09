@@ -4,21 +4,23 @@ Six local skills coordinate feature requirements, planning, task implementation,
 
 ## Start here
 
-Open Codex in this directory and say:
+From the active application directory, ask your coding assistant to use the orchestrator, providing its installed path. For example:
 
 ```text
-Use workflow/skills/sdlc-orchestrator/SKILL.md to start a feature for
-Google Drive document acquisition. I will supply the requirements.
+Use the SDLC orchestrator to start a feature for
+user preferences. I will supply the requirements.
 Start with discovery and refinement.
 ```
 
-`AGENTS.md` routes feature work to this skill. These skills are stored in `workflow/skills/` because this environment prevents writes to `.agents`. They are usable by path now; automatic `$sdlc-orchestrator` discovery is not installed. If you later move the six skill folders together into an allowed repository `.agents/skills/` or personal skill directory, update the routing paths and start a fresh session as needed. Keep their relative layout so shared links work.
+The entry point in this repository is `workflow/skills/sdlc-orchestrator/SKILL.md`. Skills can be invoked by path or through skill discovery when configured in the host environment. Keep the six skill folders together so their relative links work. Application guidance can route feature work to the installed orchestrator.
 
-The orchestrator allocates a stable ID such as F001 and creates artifacts only as needed. You explicitly approve finalized requirements, then the concrete plan and task definitions. Approval covers the revisions reviewed, not future changes. No product feature or Git repository was created by this installation.
+Feature artifacts belong in the active application's `docs/features/` directory, independently of where the skills are installed.
+
+The orchestrator allocates a stable ID such as F001 and creates artifacts only as needed. You explicitly approve finalized requirements, then the concrete plan and task definitions. Approval covers the revisions reviewed, not future changes.
 
 ## Everyday prompts
 
-Use the orchestrator path above, or simply ask for feature work in this project:
+Once the orchestrator is selected or configured in the active application, use prompts such as:
 
 ```text
 Show F001 status and the next decision needed.
@@ -28,18 +30,18 @@ Implement the next three ready tasks in F001 sequentially.
 Resume interrupted implementation in F001.
 Review F001 independently.
 Fix confirmed high-priority findings in F001, then re-review.
-Assess adding scanned-PDF support to F001 before changing code.
-Use thorough mode for F001 ingestion failure handling.
+Assess adding preference reset to F001 before changing code.
+Use thorough mode for F001 error handling.
 ```
 
 Default implementation scope is one ready task; request a batch to continue further. Approve concrete proposals explicitly, e.g. “I approve these F001 requirements” or “I approve this implementation plan and its task definitions.” The orchestrator records revision fingerprints and your approval evidence.
 
-Routine changes, relevant tests, and local commits inside approved scope do not need repeated approval. Material requirements/architecture/plan changes return to you. Destructive external actions or material external spending require specific authorization. Installing the workflow calls no cloud services.
+Routine changes, relevant tests, and local commits inside approved scope do not need repeated approval. Material requirements/architecture/plan changes return to you. Destructive external actions or material external spending require specific authorization. Using these instructions requires no cloud service.
 
 ## Saved artifacts
 
 ```text
-docs/features/F001-document-acquisition/
+docs/features/F001-user-preferences/
   requirements.md           # Intended behavior and acceptance criteria
   decisions.md              # Choices and rationale, including superseded choices
   implementation-plan.md    # Technical approach and verification strategy
@@ -68,14 +70,12 @@ Your main session coordinates specialists. Applying a skill does not inherently 
 
 ## Cost and recovery
 
-Economical mode is default: targeted context, sequential tasks, short handoffs, relevant tests, and reusable evidence. Thorough mode expands investigation and review depth; approval and critical correctness checks remain. Two failed correction attempts at the same issue stop automatic retries. Unusually expensive agent runs, evaluations, or corpus processing are surfaced beforehand.
+Economical mode is default: targeted context, sequential tasks, short handoffs, relevant tests, and reusable evidence. Thorough mode expands investigation and review depth; approval and critical correctness checks remain. Two failed correction attempts at the same issue stop automatic retries. Unusually expensive agent runs, evaluations, or large data processing are surfaced beforehand.
 
 There is no enforced monetary cap. Usage is recorded only when reliable data exists; prices are not invented.
 
 After interruption, ask to continue the feature. The orchestrator compares checkpoint, actual files, Git, task evidence, and review coverage. Existing commits are checked before retrying, unrelated edits are preserved, and uncertainty is reported. A feature completes after approved acceptance criteria, relevant validation, and finding dispositions are satisfied.
 
-## Git and project context
+## Git
 
-This directory had no Git repository at installation. During authorized implementation Codex can initialize Git if permitted, use your configured identity, and make logical local commits. Missing identity, hooks, or permissions are reported without bypassing safeguards. Branches are optional.
-
-The [n8n architecture notes](policy_research_rag_n8n_architecture.md) remain historical context containing proposals and unverified settings. No LangChain implementation or dependency selection has been made.
+During authorized implementation, the assistant can initialize Git if needed and permitted, use your configured identity, and make logical local commits. Missing identity, hooks, or permissions are reported without bypassing safeguards. Branches are optional.

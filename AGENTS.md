@@ -1,7 +1,11 @@
-# Project workflow
+# Toolkit maintenance
 
-For feature lifecycle work, read `workflow/skills/sdlc-orchestrator/SKILL.md` and its linked artifact contract. Apply sibling specialist skills for bounded stages. The orchestrator alone owns lifecycle state, history, and approvals. Skills are stored here because this environment protects `.agents` against writes; do not claim automatic skill discovery or registration.
+Keep skills reusable across projects. Preserve their relative links and keep application-specific requirements, decisions, and feature artifacts in the active application repository. Handle routine toolkit maintenance directly; use the feature lifecycle when the work calls for it.
 
-The user maintains feature requirements. Preserve intent; distinguish approved behavior from proposals. `policy_research_rag_n8n_architecture.md` is reconstructed historical context with unverified settings, not an approved implementation specification.
+# Feature workflow
 
-Use sequential task execution and economical context by default. No Jira, remote publishing, mandatory worktrees, or external service mutations are implied. Preserve unrelated user edits. Local commits within approved implementation scope are permitted where Git configuration and permissions allow.
+For feature lifecycle work, read `workflow/skills/sdlc-orchestrator/SKILL.md` and its linked artifact contract. Apply sibling specialist skills for bounded stages. The orchestrator alone owns lifecycle state, history, and approvals. Do not claim automatic skill discovery or registration without verifying the installation.
+
+The user maintains feature requirements. Preserve intent; distinguish approved behavior from proposals and unverified historical context.
+
+Use sequential task execution and economical context by default. No issue tracker, remote publishing, mandatory worktrees, or external service mutations are implied. Preserve unrelated user edits. Local commits within approved implementation scope are permitted where Git configuration and permissions allow.
